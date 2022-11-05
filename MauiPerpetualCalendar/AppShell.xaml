@@ -8,6 +8,14 @@
 
     <ShellContent
         Title="Home"
+        ContentTemplate="{DataTemplate local:CalendarNumberToYears}"
+        Route="CalendarNumbers" />
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:PerpetualCalendar}"
+        Route="PerpetualCalendar" />
+    <ShellContent
+        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
