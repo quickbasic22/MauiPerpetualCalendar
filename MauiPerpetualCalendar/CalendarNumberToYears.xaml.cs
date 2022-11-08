@@ -27,11 +27,11 @@ public partial class CalendarNumberToYears : ContentPage
 		Years.Clear();
 		Console.Beep();
 		int calnum = int.Parse(CalendarNumberEntry.Text);
-		var years = calendar.YearList[calnum].ToList();
-		foreach (int year in years )
+		var yearsforCalendar = calendar.YearList[calnum];
+		foreach (int year in yearsforCalendar)
 		{
 			Years.Add(year);
 		}
-		Years = new ObservableCollection<int>(Years);
+
     }
 }

@@ -4,19 +4,29 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiPerpetualCalendar"
+    Shell.TabBarIsVisible="True"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
+    <TabBar>
+        <Tab Title="Tab1">
+            <ShellContent
+        Title="Calendar Number, List Years"
         ContentTemplate="{DataTemplate local:CalendarNumberToYears}"
         Route="CalendarNumbers" />
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:PerpetualCalendar}"
-        Route="PerpetualCalendar" />
-    <ShellContent
-        Title="Home"
+        </Tab>
+      
+        <Tab Title="Tab2">
+            <ShellContent
+        Title="Calendar number for single year"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+        </Tab>
+        <Tab Title="Tab3">
+            <ShellContent
+        Title="Calendar year grouping"
+        ContentTemplate="{DataTemplate local:CalendarNumberGroup}"
+        Route="CalendarGrouping" />
+        </Tab>
+    </TabBar>
 
 </Shell>

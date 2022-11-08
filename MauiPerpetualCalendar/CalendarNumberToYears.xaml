@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:page="clr-namespace:MauiPerpetualCalendar"
+             x:DataType="page:CalendarNumberGroup"
              x:Class="MauiPerpetualCalendar.CalendarNumberToYears"
              Title="CalendarNumberToYears">
     <StackLayout>
         <Label 
             Text="Calendar number to years"
             HorizontalOptions="Center" />
-        <Entry x:Name="CalendarNumberEntry" Placeholder="Enter calendar number (1-14)" />
+        <Entry x:Name="CalendarNumberEntry" Text="2" Placeholder="Enter calendar number (1-14)" />
         <Button x:Name="ListYearsButton" Text="{Binding Source={Reference CalendarNumberEntry}, StringFormat='List years for calendar {0}', Path=Text}" Clicked="ListYearsButton_Clicked" />
         <ListView ItemsSource="{Binding Years}" 
                   SeparatorColor="Blue"
@@ -16,7 +18,7 @@
                       VerticalScrollBarVisibility="Always">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell TextColor="DarkBlue" Text="{Binding .}" />
+                        <TextCell TextColor="DarkBlue" Text="{Binding YearGroup}" Detail="{Binding Years}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
