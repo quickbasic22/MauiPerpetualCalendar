@@ -1,10 +1,11 @@
 using System.Collections.ObjectModel;
+using MauiPerpetualCalendar.Models;
 
-namespace MauiPerpetualCalendar;
+namespace MauiPerpetualCalendar.Views;
 
 public partial class CalendarNumberToYears : ContentPage
 {
-	PerpetualCalendar calendar;
+	readonly PerpetualCalendar calendar;
 
     public ObservableCollection<int> Years { get; set; } 
 	public CalendarNumberToYears()
@@ -25,7 +26,6 @@ public partial class CalendarNumberToYears : ContentPage
 	private void ListYearsButton_Clicked(object sender, EventArgs e)
 	{
 		Years.Clear();
-		Console.Beep();
 		int calnum = int.Parse(CalendarNumberEntry.Text);
 		var yearsforCalendar = calendar.YearList[calnum];
 		foreach (int year in yearsforCalendar)

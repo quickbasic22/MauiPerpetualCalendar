@@ -51,10 +51,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="CalendarNumberToYears.xaml">
+	  <MauiXaml Update="Views\CalendarNumberToYears.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="YearsGrouped.xaml">
+	  <MauiXaml Update="Views\YearsGrouped.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

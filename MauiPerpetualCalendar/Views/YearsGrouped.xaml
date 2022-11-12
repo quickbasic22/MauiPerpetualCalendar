@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:page="clr-namespace:MauiPerpetualCalendar.Models"
+             xmlns:local="clr-namespace:MauiPerpetualCalendar.ViewModels"
+             x:DataType="local:YearsGroupedViewModel"
+             x:Class="MauiPerpetualCalendar.Views.YearsGrouped"
+             Title="Years Grouped">
+    
+    <StackLayout>
+        <CollectionView ItemsSource="{Binding Calendars}"
+                        SelectionMode="None"
+                        IsVisible="True"
+                        IsGrouped="True">
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="page:CalendarGroup">
+                    <Label Text="{Binding CalendarNumber}" FontSize="Large" TextColor="DarkBlue" BackgroundColor="White" />
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="page:CalendarModel">
+                    <Label Text="{Binding YearString}" FontSize="Large" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

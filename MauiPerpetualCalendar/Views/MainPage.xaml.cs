@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
+using MauiPerpetualCalendar.Models;
 
-namespace MauiPerpetualCalendar;
+namespace MauiPerpetualCalendar.Views;
 
 public partial class MainPage : ContentPage
 {

@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		PerpetualCalendarCSharpInteractiveScreenText.txt = PerpetualCalendarCSharpInteractiveScreenText.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiPerpetualCalendarTests", "MauiPerpetualCalendarTests\MauiPerpetualCalendarTests.csproj", "{F07D6C73-88A0-43EE-A4B5-50BAB997C3ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{B42A3D31-A77B-4ADD-A61C-DD161033228E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B42A3D31-A77B-4ADD-A61C-DD161033228E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B42A3D31-A77B-4ADD-A61C-DD161033228E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F07D6C73-88A0-43EE-A4B5-50BAB997C3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07D6C73-88A0-43EE-A4B5-50BAB997C3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07D6C73-88A0-43EE-A4B5-50BAB997C3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07D6C73-88A0-43EE-A4B5-50BAB997C3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

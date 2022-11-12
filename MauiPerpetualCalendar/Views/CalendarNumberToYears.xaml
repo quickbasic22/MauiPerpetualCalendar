@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:page="clr-namespace:MauiPerpetualCalendar"
-             x:DataType="page:CalendarNumberGroup"
-             x:Class="MauiPerpetualCalendar.CalendarNumberToYears"
-             Title="CalendarNumberToYears">
+             xmlns:page="clr-namespace:MauiPerpetualCalendar.Views"
+             x:DataType="page:CalendarNumberToYears"
+             x:Class="MauiPerpetualCalendar.Views.CalendarNumberToYears"
+             Title="Calendar Number To Years">
     <StackLayout>
         <Label 
             Text="Calendar number to years"
@@ -18,7 +18,7 @@
                       VerticalScrollBarVisibility="Always">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell TextColor="DarkBlue" Text="{Binding YearGroup}" Detail="{Binding Years}" />
+                        <TextCell TextColor="DarkBlue" Text="{Binding .}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

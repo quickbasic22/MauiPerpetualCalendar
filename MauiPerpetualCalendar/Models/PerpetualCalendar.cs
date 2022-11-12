@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiPerpetualCalendar
+namespace MauiPerpetualCalendar.Models
 {
     public class PerpetualCalendar
     {
-        public List<int> Year1 { get; set; }
-        public List<int> Year2 { get; set; }
-        public List<int> Year3 { get; set; }
-        public List<int> Year4 { get; set; }
-        public List<int> Year5 { get; set; }
-        public List<int> Year6 { get; set; }
-        public List<int> Year7 { get; set; }
-        public List<int> Year8 { get; set; }
-        public List<int> Year9 { get; set; }
-        public List<int> Year10 { get; set; }
-        public List<int> Year11 { get; set; }
-        public List<int> Year12 { get; set; }
-        public List<int> Year13 { get; set; }
-        public List<int> Year14 { get; set; }
+        //public List<int> Year1 { get; set; }
+        //public List<int> Year2 { get; set; }
+        //public List<int> Year3 { get; set; }
+        //public List<int> Year4 { get; set; }
+        //public List<int> Year5 { get; set; }
+        //public List<int> Year6 { get; set; }
+        //public List<int> Year7 { get; set; }
+        //public List<int> Year8 { get; set; }
+        //public List<int> Year9 { get; set; }
+        //public List<int> Year10 { get; set; }
+        //public List<int> Year11 { get; set; }
+        //public List<int> Year12 { get; set; }
+        //public List<int> Year13 { get; set; }
+        //public List<int> Year14 { get; set; }
         public Dictionary<int, int[]> YearList = new();
         public PerpetualCalendar()
         {
@@ -591,8 +591,6 @@ namespace MauiPerpetualCalendar
             YearList.Add(12, cal12);
             YearList.Add(13, cal13);
             YearList.Add(14, cal14);
-
-
         }
     }
 }

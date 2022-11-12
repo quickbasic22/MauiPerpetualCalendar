@@ -3,7 +3,7 @@
     x:Class="MauiPerpetualCalendar.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiPerpetualCalendar"
+    xmlns:local="clr-namespace:MauiPerpetualCalendar.Views"
     Shell.TabBarIsVisible="True"
     Shell.FlyoutBehavior="Disabled">
 
@@ -24,7 +24,7 @@
         <Tab Title="Tab3">
             <ShellContent
         Title="Calendar year grouping"
-        ContentTemplate="{DataTemplate local:CalendarNumberGroup}"
+        ContentTemplate="{DataTemplate local:YearsGrouped}"
         Route="CalendarGrouping" />
         </Tab>
     </TabBar>

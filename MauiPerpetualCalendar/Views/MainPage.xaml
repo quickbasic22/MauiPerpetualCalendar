@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:mainpage="clr-namespace:MauiPerpetualCalendar"
+             xmlns:mainpage="clr-namespace:MauiPerpetualCalendar.Views"
              x:DataType="mainpage:MainPage"
-             x:Class="MauiPerpetualCalendar.MainPage">
+             x:Class="MauiPerpetualCalendar.Views.MainPage"
+             Title="Enter Year get Calendar number">
 
     <ScrollView>
         <VerticalStackLayout
@@ -14,7 +15,7 @@
             <Label Text="Enter Year" />
             <Entry x:Name="entryNumber" Text="1973" Placeholder="Enter Year" />
             <Label x:Name="AnswerLabel" Text="{Binding CalendarNumber}" FontSize="Large" BackgroundColor="Blue" TextColor="LightPink" />
-            <Button Text="Get Calendar Number" Clicked="Button_Clicked" />
+            <Button Text="{Binding Source={Reference entryNumber}, Path=Text, StringFormat='Calendar {0} get Years'}" Clicked="Button_Clicked" />
 
         </VerticalStackLayout>
     </ScrollView>
